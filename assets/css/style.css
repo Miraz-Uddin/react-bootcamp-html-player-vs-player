@@ -1,0 +1,59 @@
+/* Common CSS */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+ul>li,
+ol>li {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#navbar {
+    min-width: 480px;
+    width: 100% !important;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.main_content {
+    min-height: 75vh;
+}
+
+#p1Score {
+    margin-left: 5px;
+}
+
+#p2Score {
+    margin-left: 5px;
+}
+
+/* [data-bs-theme=dark] .list-group-tick i {
+    color: #ce5d67;
+    background-color: #fff;
+    border: 1px solid #fff;
+} */

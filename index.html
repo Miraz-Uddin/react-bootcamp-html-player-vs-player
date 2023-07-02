@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html data-bs-theme="light">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+
+    <!-- Bootstrap version 5.3.0 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Media Query -->
+    <link rel="stylesheet" href="./assets/css/media.css" />
+
+    <!-- Title -->
+    <title>Player vs Player</title>
+  </head>
+
+  <body>
+    <!-- Heading Starts-->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Player vs Player</a>
+        </div>
+      </nav>
+    </section>
+    <!-- Navbar Ends-->
+
+    <!-- Main Content Starts -->
+    <div class="main_content">
+      <div class="container">
+        <div class="row g-3 py-5">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-body">
+                  <h3 class="text-center"><strong>Game Rules</strong></h3>
+                  <ol class="list-group list-group-flush list-group-numbered">
+                    <li class="list-group-item">
+                      Winning Score Can be set Dynamically
+                    </li>
+                    <li class="list-group-item">
+                      Player 1 And Player 2 will click the Button One After
+                      Another
+                    </li>
+                    <li class="list-group-item">
+                      Whoever Get to the Winning score first, will be the Winner
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <p class="text-center">
+                  <span class="lead">
+                    <strong
+                      >Winning Score:
+                      <span id="winning_score" class="text-success">
+                        5
+                      </span></strong
+                    >
+                  </span>
+                </p>
+              </div>
+              <div class="card-body">
+                <div
+                  class="alert alert-success alert-dismissible fade show"
+                  role="alert"
+                >
+                  Congrats !! <strong>Player 1</strong> Won the Game.
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="input-group mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Input a Number to Change The Winning Score"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+
+                  <button
+                    class="btn btn-info"
+                    type="button"
+                    id="change_winning_score"
+                  >
+                    Change
+                  </button>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="input-group mb-3">
+                      <button class="btn btn-success" type="button" id="p1Btn">
+                        Player 1
+                      </button>
+                      <span class="input-group-text"
+                        >Game Score: <span id="p1Score">0</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text"
+                        >Game Score: <span id="p2Score">0</span>
+                      </span>
+                      <button
+                        class="btn btn-success"
+                        type="button"
+                        id="p2Btn"
+                        disabled="true"
+                      >
+                        Player 2
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <p class="text-center">
+                  To Reset The Game, Please
+                  <a href="#" class="link-underline-warning">Click Here</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content Ends -->
+
+    <!-- Footer Starts -->
+    <footer>
+      <p class="text-white text-center">
+        Copyright <span id="year"></span> ©
+        <span><span id="company_name"></span></span>
+      </p>
+    </footer>
+    <!-- Footer Ends -->
+
+    <!-- JS Links -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
